@@ -1,0 +1,1 @@
+document.getElementById('headingOne').classList.add('text-5xl')
