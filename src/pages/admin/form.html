@@ -15,10 +15,10 @@
     <!-- mobile menu bar -->
     <div class="bg-primary text-gray-100 flex justify-between md:hidden">
       <!-- logo -->
-      <a href="#" class="block p-4 text-white font-bold">ADMIN</a>
+      <a href="#" class="block p-4 text-white font-bold order-2">ADMIN</a>
 
       <!-- mobile menu button -->
-      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-medium">
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-medium order-1" id="mobileMenu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -27,7 +27,8 @@
 
     <!-- sidebar -->
     <div
-      class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+      class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"
+      id="navList">
 
       <!-- logo -->
       <a href="#" class="text-black flex items-center space-x-2 px-4 mb-10 text-center">
@@ -40,7 +41,7 @@
 
       <!-- nav -->
       <nav class="">
-        <a href="#"
+        <a href="home.html"
           class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-r-4">
           Dashboard
         </a>
@@ -54,10 +55,10 @@
             </svg>
           </span>
         </a>
-        <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+        <a href="data.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
           Daftar Mahasiswa
         </a>
-        <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+        <a href="dataPaslon.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
           Daftar Paslon
         </a>
         <a href=""
@@ -70,102 +71,114 @@
             </svg>
           </span>
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+        <a href="quickCount.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
           Data Terkini
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+        <a href="quickCount.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
           Hasil Pemilihan
         </a>
         <a href=""
           class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
           Log Out
         </a>
-
       </nav>
     </div>
 
     <!-- content -->
-    <div class="flex-1 p-10 text-2xl font-bold">
-      <h1 class="text-4xl underline mb-12">
-        FORM DATA PASLON
-      </h1>
-      <div class="formuli w-fullr">
-        <form action="">
-          <table class="">
-            <tr class="">
-              <td>
-                <label for="nketua" class="text-left">
-                  Nama Calon Ketua
-                </label>
-              </td>
-              <td>
-                <input id="nketua" name="nketua" type="text" required
-                  class="border border-primary rounded-lg w-3/5 right-0" />
-              </td>
-            </tr>
-            <tr>
-              <td class="">
-                <label for="nketua" class="mr-3">
-                  Nama Calon Wakil Ketua
-                </label>
-              </td>
-              <td class="">
-                <input id="nketua" name="nketua" type="text" required
-                  class="border border-primary rounded-lg w-3/5 right-0 " />
-              </td>
-            </tr>
-            <tr>
-              <td class="">
-                <label for="nketua" class="mr-3">
-                  Foto
-                </label>
-              </td>
-              <td class="">
-                <button class="border border-primary rounded-xl p-2">
-                  Upload
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td class="">
-                <label for="nketua" class="mr-3">
-                  Visi
-                </label>
-              </td>
-              <td class="">
-                <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl">
+    <main>
+      <div class="flex-1 p-10 text-2xl font-bold">
+        <h1 class="text-4xl underline mb-10">
+          FORM DATA PASLON
+        </h1>
+        <div class="formulir w-full justify-between">
+          <form action="" class="p-5 rounded-xl">
+            <table class="">
+                  <tr class="">
+                      <td>
+                        <label for="nketua" class="text-left text-lg xl:text-2xl">
+                          Nama Calon Ketua
+                        </label>
+                      </td>
+                      <td>
+                        <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-full right-0" />
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="">
+                        <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                            Nama Calon Wakil Ketua
+                        </label>
+                      </td>
+                      <td class="">
+                        <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-full right-0 " />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="">
+                      <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                        Foto
+                      </label>
+                    </td>
+                    <td class="">
+                      <button class="border border-primarydark rounded-xl py-2 bg-primary px-5 hover:bg-secondary hover:text-primarydark">
+                        Upload
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="">
+                      <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                        Visi
+                      </label>
+                    </td>
+                    <td class="">
+                      <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl lg:hidden">
+                      </textarea>
+                      <textarea name="" id="" cols="50" rows="10" class="border border-primary rounded-xl hidden lg:block xl:hidden">
+                      </textarea>
+                      <textarea name="" id="" cols="80" rows="10" class="border border-primary rounded-xl hidden xl:block">
+                      </textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td class="">
+                        <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                            Misi
+                        </label>
+                      </td>
+                      <td class="">
+                        <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl lg:hidden">
                         </textarea>
-              </td>
-            </tr>
-            <tr>
-              <td class="">
-                <label for="nketua" class="mr-3">
-                  Misi
-                </label>
-              </td>
-              <td class="">
-                <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl">
+                        <textarea name="" id="" cols="50" rows="10" class="border border-primary rounded-xl hidden lg:block xl:hidden">
                         </textarea>
-              </td>
-            </tr>
-            <tr>
-              <td class="">
-                <label for="nketua" class="mr-3">
-                  Nomor HP Campaign Manager
-                </label>
-              </td>
-              <td class="">
-                <input type="text" name="no-hp" class="border border-primary rounded-xl">
-              </td>
-            </tr>
-          </table>
-          <button class="border border-primarydark rounded-xl bg-secondary py-3 px-10">
-            Submit
-          </button>
-        </form>
+                        <textarea name="" id="" cols="80" rows="10" class="border border-primary rounded-xl hidden xl:block">
+                        </textarea>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="">
+                      <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                          Nomor HP Campaign Manager
+                      </label>
+                    </td>
+                    <td class="">
+                      <input type="text" name="no-hp" class="border border-primary rounded-xl w-full"> 
+                    </td>
+                  </tr>
+                  <tr class="">
+                    <td colspan="2" class="">
+                      <button class="block bg-primary border-2 border-primarydark text-white w-full rounded-xl text-center mt-5 hover:bg-secondary hover:text-primarydark">
+                        Submit
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+            </form>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
+  <script type="module" src="../../script/admin.js"></script>
 </body>
 
 </html>

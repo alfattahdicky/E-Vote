@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <title>Data Admin</title>
+</head>
+
+<body>
+  <div class="relative min-h-screen md:flex">
+
+    <!-- mobile menu bar -->
+    <div class="bg-primary text-gray-100 flex justify-between md:hidden">
+      <!-- logo -->
+      <a href="#" class="block p-4 text-white font-bold order-2">ADMIN</a>
+
+      <!-- mobile menu button -->
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-medium order-1" id="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- sidebar -->
+    <div
+      class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"
+      id="navList">
+
+      <!-- logo -->
+      <a href="#" class="text-black flex items-center space-x-2 px-4 mb-10 text-center">
+        <img src="../../assets/images/auction 1.png" alt="">
+        <span class="text-2xl font-extrabold">ADMIN</span>
+      </a>
+
+      <!-- nav -->
+      <nav class="">
+        <a href="home.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-r-4">
+          Dashboard
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Data <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="data.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Mahasiswa
+        </a>
+        <a href="dataPaslon.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Paslon
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Voting <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="quickCount.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Data Terkini
+        </a>
+        <a href="quickCount.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Hasil Pemilihan
+        </a>
+        <a href=""
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
+          Log Out
+        </a>
+      </nav>
+    </div>
+  
+    <!-- content -->
+    <main>
+      <div class="flex-1 p-10 text-2xl font-bold">
+        <h1 class="text-4xl underline mb-12">
+          DATA MAHASISWA
+        </h1>
+        <h2 class="text-3xl border-b-4 border-black flex items-center block">
+          TOTAL MAHASISWA AKTIF
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-16 text-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+            </svg>
+          </span>
+        </h2>
+        <div class="maktif mt-10">
+          <h1 class="font-bold text-5xl">
+            350
+            <span class="font-normal text-4xl">
+              Mahasiswa Aktif
+            </span>
+          </h1>
+        </div>
+        <h2 class="text-3xl border-b-4 border-black flex items-center block mt-10">
+          MAHASISWA YANG TERDAFTAR
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-16 md:ml-32 text-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+            </svg>
+          </span>
+        </h2>
+        <div class="maktif mt-10">
+          <h1 class="font-bold text-5xl">
+            120
+            <span class="font-normal text-4xl">
+              Mahasiswa Aktif
+            </span>
+          </h1>
+        </div>
+        <h2 class="text-3xl border-b-4 border-black flex items-center block mt-10">
+          MAHASISWA YANG SUDAH VOTING
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 ml-16 md:ml-28 text-right" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+            </svg>
+          </span>
+        </h2>
+        <div class="maktif mt-10">
+          <h1 class="font-bold text-5xl">
+            50
+            <span class="font-normal text-4xl">
+              Mahasiswa Aktif
+            </span>
+          </h1>
+        </div>
+        
+      </div>
+
+    </main>
+  </div>
+  <script type="module" src="../../script/admin.js"></script>
+</body>
+
+</html>
