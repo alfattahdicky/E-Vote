@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Paslon</title>
+</head>
+
+<body>
+  <nav class=" lg:flex h-16 lg:h-20 lg:justify-between bg-secondary py-4 lg:items-center fixed top-0 left-0 right-0">
+    <div class="wrapper grid lg:block grid-cols-3 px-4 justify-items-center items-center">
+      <div
+        class="logo text-primarydark justify-self-center col-start-2 col-end-3 lg:col-start-1 lg:col-end-2 font-bold text-lg ml-5">
+        <a href="/">
+          <h1 class="text-2xl">E-VOTE</h1>
+        </a>
+      </div>
+      <div class="justify-self-end lg:hidden" id="hamburger">
+        <img src="../assets/images/hamburger.png" alt="Hamburger">
+      </div>
+    </div>
+    <div
+      class="flex flex-col lg:flex-row items-end lg:items-center text-black text-sm w-80 md:w-96 lg:w-auto min-h-screen lg:min-h-0 bg-secondary lg:relative lg:right absolute right-0 lg:top-0 top-14 p-4 gap-8 lg:gap-0 transition duration-300 ease-in-out transform translate-x-16 opacity-0 lg:translate-x-0 lg:opacity-100"
+      id="navList">
+      <div class="items flex">
+        <a href="#" class="px-4 flex items-center  hover:text-primarydark text-xl lg:text-base">
+          <div class="flex">
+            <span class="lg:mr-4 ml-2 order-2 lg:order-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+              </svg>
+            </span>
+            <p class="order-1 lg:order-2">Informasi Paslon</p>
+          </div>
+        </a>
+      </div>
+      <div class="items flex">
+        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+          <div class="flex">
+            <span class="lg:mr-4 ml-2 order-2 lg:order-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </span>
+            <p class="order-1 lg:order-2">Menu Voting</p>
+          </div>
+        </a>
+      </div>
+      <div class="items flex">
+        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+          <div class="flex">
+            <span class="lg:mr-4 ml-2 order-2 lg:order-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </span>
+            <p class="order-1 lg:order-2">Tata Cara Pemilihan</p>
+          </div>
+        </a>
+      </div>
+      <div class="items flex">
+        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+          <div class="flex">
+            <span class="lg:mr-4 ml-2 order-2 lg:order-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <p class="order-1 lg:order-2">Bantuan</p>
+          </div>
+        </a>
+      </div>
+      <div class="items relative flex">
+        <div
+          class="profile lg:flex hidden py-1 px-2 rounded-md items-center cursor-pointer hover:bg-primary transition duration-100 ease-in-out"
+          id="profile">
+          <div class="relative">
+            <img src="../assets/images/profile.png" class="w-10 h-10 rounded-full object-cover mr-2" alt="Profile">
+            <span class="indicator w-2 h-2 bg-indicator absolute bottom-1 right-2 rounded-full"></span>
+          </div>
+          <p>Dicky</p>
+        </div>
+        <div
+          class="detail-profile  lg:absolute lg:-left-24 lg:top-16 opacity-100 lg:opacity-0 transition duration-300 ease-in lg:mr-0 lg:mt-0 mx-auto mt-80 "
+          id="detailProfile">
+          <div class="wrapper lg:bg-blue-300 lg:w-48 lg:h-56 p-4 flex flex-row lg:flex-col justify-center ">
+            <div class="relative">
+              <img src="../assets/images/profile.png"
+                class="lg:w-24 lg:h-24 w-10 h-10 rounded-full relative object-center object-cover mx-auto"
+                alt="Profile">
+              <span
+                class="indicator lg:w-5 lg:h-5 w-2 h-2 absolute lg:right-8 lg:top-16 bottom-2 right-1 bg-indicator rounded-full"></span>
+            </div>
+            <div
+              class="info-profile text-black text-left lg:text-center flex lg:block items-center lg:items-stretch lg:py-3">
+              <div class="pb-2 px-3">
+                <p class="name">Dicky AL Fattah</p>
+                <p class="nim">1903332096</p>
+              </div>
+              <button class="btn-change-password bg-blue-200 ml-3 p-2 lg:p-2 rounded-md">Ganti Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="xl:container mx-auto px-4 py-32">
+      <h1 class="text-3xl text-center">Informasi Paslon</h1>
+
+      <div class="paslon pt-10">
+        <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
+          <figure class="md:pr-20 md:flex-3">
+            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
+            <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
+          </figure>
+
+          <div class="info-paslon max-w-full px-5 sm:px-10 md:px-0 md:w-64 md:flex-auto grid md:grid-cols-4 gap-4">
+            <div class="description md:col-span-4">
+              <h2 class="text-2xl pb-2">Deskripsi</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
+            </div>
+            <div class="visi md:col-span-2">
+              <h2 class="text-2xl pb-2">Visi</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
+            </div>
+            <div class="misi md:col-span-2">
+              <h2 class="text-2xl pb-2">Misi</h2>
+              <ul class="list-disc pl-4">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
+          <figure class="md:pr-20 md:flex-3">
+            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
+            <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
+          </figure>
+
+          <div class="info-paslon max-w-full px-5 sm:px-10 md:px-0 md:w-64 md:flex-auto grid md:grid-cols-4 gap-4">
+            <div class="description md:col-span-4">
+              <h2 class="text-2xl pb-2">Deskripsi</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
+                dolor
+                sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
+            </div>
+            <div class="visi md:col-span-2">
+              <h2 class="text-2xl pb-2">Visi</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
+            </div>
+            <div class="misi md:col-span-2">
+              <h2 class="text-2xl pb-2">Misi</h2>
+              <ul class="list-disc pl-4">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <script src="../script/app.js"></script>
+</body>
+
+</html>
