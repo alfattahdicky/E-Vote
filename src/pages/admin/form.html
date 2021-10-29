@@ -30,9 +30,7 @@
   
       <!-- logo -->
       <a href="#" class="text-black flex items-center space-x-2 px-4 mb-10 text-center">
-        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-        </svg>
+        <img src="../../assets/images/auction 1.png" alt="" class="w-8 h-8 lg:w-10 lg:h-10">
         <span class="text-2xl font-extrabold">ADMIN</span>
       </a>
   
@@ -67,91 +65,108 @@
         <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
           Hasil Pemilihan
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
+        <a href="" class="flex block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
           Log Out
-        </a>
-        
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+          </span>
+        </a>  
       </nav>
     </div>
   
     <!-- content -->
     <div class="flex-1 p-10 text-2xl font-bold">
-      <h1 class="text-4xl underline mb-12">
+      <h1 class="text-4xl underline mb-10">
         FORM DATA PASLON
       </h1>
-      <div class="formuli w-fullr">
-          <form action="">
-              <table class="">
-                  <tr class="">
-                      <td>
-                        <label for="nketua" class="text-left">
-                            Nama Calon Ketua
-                        </label>
-                      </td>
-                      <td>
-                        <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-3/5 right-0" />
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="">
-                        <label for="nketua" class="mr-3">
-                            Nama Calon Wakil Ketua
-                        </label>
-                      </td>
-                      <td class="">
-                        <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-3/5 right-0 " />
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="">
-                        <label for="nketua" class="mr-3">
-                            Foto
-                        </label>
-                      </td>
-                      <td class="">
-                        <button class="border border-primary rounded-xl p-2">
-                            Upload
-                        </button>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="">
-                        <label for="nketua" class="mr-3">
-                            Visi
-                        </label>
-                      </td>
-                      <td class="">
-                        <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl">
-                        </textarea>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="">
-                        <label for="nketua" class="mr-3">
-                            Misi
-                        </label>
-                      </td>
-                      <td class="">
-                        <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl">
-                        </textarea>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td class="">
-                        <label for="nketua" class="mr-3">
-                            Nomor HP Campaign Manager
-                        </label>
-                      </td>
-                      <td class="">
-                        <input type="text" name="no-hp" class="border border-primary rounded-xl"> 
-                      </td>
-                  </tr>
+      <div class="formulir w-full justify-between">
+        <form action="" class="p-5 rounded-xl">
+          <table class="">
+                <tr class="">
+                    <td>
+                      <label for="nketua" class="text-left text-lg xl:text-2xl">
+                        Nama Calon Ketua
+                      </label>
+                    </td>
+                    <td>
+                      <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-full right-0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                      <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                          Nama Calon Wakil Ketua
+                      </label>
+                    </td>
+                    <td class="">
+                      <input id="nketua" name="nketua" type="text" required class="border border-primary rounded-lg w-full right-0 " />
+                    </td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                      Foto
+                    </label>
+                  </td>
+                  <td class="">
+                    <button class="border border-primarydark rounded-xl py-2 bg-primary px-5 hover:bg-secondary hover:text-primarydark">
+                      Upload
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                      Visi
+                    </label>
+                  </td>
+                  <td class="">
+                    <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl lg:hidden">
+                    </textarea>
+                    <textarea name="" id="" cols="50" rows="10" class="border border-primary rounded-xl hidden lg:block xl:hidden">
+                    </textarea>
+                    <textarea name="" id="" cols="80" rows="10" class="border border-primary rounded-xl hidden xl:block">
+                    </textarea>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="">
+                      <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                          Misi
+                      </label>
+                    </td>
+                    <td class="">
+                      <textarea name="" id="" cols="30" rows="10" class="border border-primary rounded-xl lg:hidden">
+                      </textarea>
+                      <textarea name="" id="" cols="50" rows="10" class="border border-primary rounded-xl hidden lg:block xl:hidden">
+                      </textarea>
+                      <textarea name="" id="" cols="80" rows="10" class="border border-primary rounded-xl hidden xl:block">
+                      </textarea>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <label for="nketua" class="mr-3 text-lg xl:text-2xl">
+                        Nomor HP Campaign Manager
+                    </label>
+                  </td>
+                  <td class="">
+                    <input type="text" name="no-hp" class="border border-primary rounded-xl w-full"> 
+                  </td>
+                </tr>
+                <tr class="">
+                  <td colspan="2" class="">
+                    <button class="block bg-primary border-2 border-primarydark text-white w-full rounded-xl text-center mt-5 hover:bg-secondary hover:text-primarydark">
+                      Submit
+                    </button>
+                  </td>
+                </tr>
               </table>
-              <button class="border border-primarydark rounded-xl bg-secondary py-3 px-10">
-                  Submit
-              </button>
           </form>
       </div>
+    </div>
   </div>
 </body>
 
