@@ -11,7 +11,7 @@ module.exports = defineConfig({
         infopaslon: resolve(__dirname, 'src/pages/infopaslon.html'),
         adminhome: resolve(__dirname, 'src/pages/admin/home.html'),
         admindata: resolve(__dirname, 'src/pages/admin/data.html'),
-        formpaslon: resolve(__dirname, 'src/pages/admin/form.html')
+        formpaslon: resolve(__dirname, 'src/pages/admin/form.html'),
       }
     }
   }
