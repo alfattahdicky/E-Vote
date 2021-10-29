@@ -53,5 +53,3 @@ askEl.forEach(function (el) {
     }
   })
 })
-
-console.log('hello')
