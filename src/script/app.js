@@ -1,8 +1,9 @@
 const detailProfileElement = document.getElementById('detailProfile');
 const profile = document.getElementById('profile');
-const main = document.getElementById('main');
+const main = document.querySelector('main');
 const toggle = document.getElementById('hamburger');
 const navList = document.getElementById('navList');
+const askEl = document.querySelectorAll('.ask');
 
 
 function showDetailProfile() {
@@ -35,7 +36,23 @@ main.addEventListener('click', function () {
   hiddenNavbar();
   hiddenDetailProfile();
 });
-toggle.addEventListener('click', showNavbar)
+toggle.addEventListener('click', showNavbar);
+
+askEl.forEach(function (el) {
+  el.addEventListener('click', function () {
+    let button = el.firstElementChild.lastElementChild;
+    let answer = el.nextElementSibling;
+    if (answer.classList.contains('hidden')) {
+      answer.classList.replace('hidden', 'block');
+      button.innerText = '-';
+    } else {
+      answer.classList.replace('block', 'hidden');
+      button.innerText = '+';
+    }
+  })
+})
+
+// askEl.addEventListener('click', showAnswer);
 
 
 

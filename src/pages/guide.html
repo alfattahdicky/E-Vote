@@ -6,16 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informasi Paslon</title>
+  <title>Tata Cara Pemilihan</title>
 </head>
 
 <body class="font-body">
-  <nav class=" lg:flex h-16 lg:h-20 lg:justify-between bg-secondary py-4 lg:items-center fixed top-0 left-0 right-0">
-    <div class="wrapper grid lg:block grid-cols-3 px-4 justify-items-center items-center">
+  <nav
+    class=" lg:flex h-16 lg:h-20 lg:justify-between bg-secondary py-4 lg:items-center fixed top-0 left-0 right-0 z-50">
+    <div class="wrapper grid lg:block grid-cols-3 px-2 md:px-4 justify-items-center items-center">
       <div
         class="logo text-primarydark justify-self-center col-start-2 col-end-3 lg:col-start-1 lg:col-end-2 font-bold text-lg ml-5">
         <a href="/">
-          <h1 class="text-2xl">E-VOTE</h1>
+          <h1 class="text-xl md:text-2xl">E-VOTE</h1>
         </a>
       </div>
       <div class="justify-self-end lg:hidden" id="hamburger">
@@ -23,10 +24,10 @@
       </div>
     </div>
     <div
-      class="flex flex-col lg:flex-row items-end lg:items-center text-black text-sm w-80 md:w-96 lg:w-auto min-h-screen lg:min-h-0 bg-secondary lg:relative lg:right absolute right-0 lg:top-0 top-14 p-4 gap-8 lg:gap-0 transition duration-300 ease-in-out transform translate-x-16 opacity-0 lg:translate-x-0 lg:opacity-100"
+      class="flex flex-col lg:flex-row items-end lg:items-center text-black text-sm w-80 md:w-96 lg:w-auto min-h-screen lg:min-h-0 bg-secondary lg:relative lg:right absolute right-0 lg:top-0 top-14 p-4 gap-8 lg:gap-4 transition duration-300 ease-in-out transform translate-x-16 opacity-0 lg:translate-x-0 lg:opacity-100 "
       id="navList">
       <div class="items flex">
-        <a href="#" class="px-4 flex items-center  hover:text-primarydark text-xl lg:text-base">
+        <a href="#" class="flex items-center hover:text-primarydark text-xl lg:text-base">
           <div class="flex">
             <span class="lg:mr-4 ml-2 order-2 lg:order-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -40,7 +41,7 @@
         </a>
       </div>
       <div class="items flex">
-        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+        <a href="#" class="flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
           <div class="flex">
             <span class="lg:mr-4 ml-2 order-2 lg:order-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -54,7 +55,7 @@
         </a>
       </div>
       <div class="items flex">
-        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+        <a href="#" class="flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
           <div class="flex">
             <span class="lg:mr-4 ml-2 order-2 lg:order-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -68,7 +69,7 @@
         </a>
       </div>
       <div class="items flex">
-        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+        <a href="#" class="flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
           <div class="flex">
             <span class="lg:mr-4 ml-2 order-2 lg:order-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -82,7 +83,7 @@
         </a>
       </div>
       <div class="items flex">
-        <a href="#" class="px-4 flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
+        <a href="#" class="flex items-center order-2 lg:order-1 hover:text-primarydark text-xl lg:text-base">
           <div class="flex">
             <span class="lg:mr-4 ml-2 order-2 lg:order-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -130,70 +131,69 @@
     </div>
   </nav>
 
-  <main id="main">
-    <div class="xl:container mx-auto px-4 py-32">
-      <h1 class="text-3xl text-center">Informasi Paslon</h1>
+  <main>
+    <div class="xl:container mx-auto py-28">
+      <h1 class="text-2xl lg:text-3xl text-center text-yellow-700">Tata Cara Pemilihan</h1>
 
-      <div class="paslon pt-10">
-        <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
-          <figure class="md:pr-20 md:flex-3">
-            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
-            <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
-          </figure>
+      <div class="relative overflow-hidden mx-2 md:mx-8 py-10 lg:p-10 mt-0 lg:mt-10 h-full">
+        <div
+          class="absolute border-secondary h-full lg:w-10/12 lg:h-0 border-4 top-10 lg:top-32 left-1/3 md:left-1/4 lg:left-28">
+        </div>
 
-          <div class="info-paslon max-w-full px-5 sm:px-10 md:px-0 md:w-64 md:flex-auto grid md:grid-cols-4 gap-4">
-            <div class="description md:col-span-4">
-              <h2 class="text-2xl pb-2">Deskripsi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
-                dolor
-                sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
-            </div>
-            <div class="visi md:col-span-2">
-              <h2 class="text-2xl pb-2">Visi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
-            </div>
-            <div class="misi md:col-span-2">
-              <h2 class="text-2xl pb-2">Misi</h2>
-              <ul class="list-disc pl-4">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-              </ul>
+        <div class="grid place-items-center grid-flow-row lg:grid-flow-col">
+          <div class="ml-0 md:ml-2">
+            <div class="flex lg:flex-col items-center lg:w-52">
+              <div class="">
+                <h1 class="text-base md:text-2xl text-right text-yellow-700">Tahap 1</h1>
+              </div>
+              <div class="bg-secondary rounded-full w-16 h-16 md:w-20 md:h-20 my-5 flex-none mx-3 md:mx-5 lg:mx-0">
+              </div>
+              <div class="text-left lg:text-center flex-1 lg:flex-none">
+                <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
-          <figure class="md:pr-20 md:flex-3">
-            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
-            <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
-          </figure>
-
-          <div class="info-paslon max-w-full px-5 sm:px-10 md:px-0 md:w-64 md:flex-auto grid md:grid-cols-4 gap-4">
-            <div class="description md:col-span-4">
-              <h2 class="text-2xl pb-2">Deskripsi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
-                dolor
-                sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
-            </div>
-            <div class="visi md:col-span-2">
-              <h2 class="text-2xl pb-2">Visi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Arcu eget integer metus blandit.</p>
-            </div>
-            <div class="misi md:col-span-2">
-              <h2 class="text-2xl pb-2">Misi</h2>
-              <ul class="list-disc pl-4">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam consectetur amet, ut nulla.</li>
-              </ul>
+          <div class="ml-0 md:ml-2">
+            <div class="flex lg:flex-col items-center lg:w-52">
+              <div class="">
+                <h1 class="text-base md:text-2xl text-right text-yellow-700">Tahap 2</h1>
+              </div>
+              <div class="bg-secondary rounded-full w-16 h-16 md:w-20 md:h-20 my-5 flex-none mx-3 md:mx-5 lg:mx-0">
+              </div>
+              <div class="text-left lg:text-center flex-1 lg:flex-none">
+                <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam.</p>
+              </div>
             </div>
           </div>
+          <div class="ml-0 md:ml-2">
+            <div class="flex lg:flex-col items-center lg:w-52">
+              <div class="">
+                <h1 class="text-base md:text-2xl text-right text-yellow-700">Tahap 3</h1>
+              </div>
+              <div class="bg-secondary rounded-full w-16 h-16 md:w-20 md:h-20 my-5 flex-none mx-3 md:mx-5 lg:mx-0">
+              </div>
+              <div class="text-left lg:text-center flex-1 lg:flex-none">
+                <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ml-0 md:ml-2">
+            <div class="flex lg:flex-col items-center lg:w-52">
+              <div class="">
+                <h1 class="text-base md:text-2xl text-right text-yellow-700">Tahap 4</h1>
+              </div>
+              <div class="bg-secondary rounded-full w-16 h-16 md:w-20 md:h-20 my-5 flex-none mx-3 md:mx-5 lg:mx-0">
+              </div>
+              <div class="text-left lg:text-center flex-1 lg:flex-none">
+                <p class="text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+
       </div>
-
-
     </div>
   </main>
 
