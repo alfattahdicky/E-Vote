@@ -1,3 +1,5 @@
+import '../style.css';
+
 const detailProfileElement = document.getElementById('detailProfile');
 const profile = document.getElementById('profile');
 const main = document.querySelector('main');
