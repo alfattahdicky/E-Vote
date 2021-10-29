@@ -52,8 +52,4 @@ askEl.forEach(function (el) {
   })
 })
 
-// askEl.addEventListener('click', showAnswer);
-
-
-
 console.log('hello')
