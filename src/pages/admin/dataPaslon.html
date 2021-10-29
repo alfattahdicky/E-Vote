@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Paslon</title>
+</head>
+
+<body class="font-body">
+
+  <div class="relative min-h-screen md:flex">
+    <!-- mobile menu bar -->
+    <div class="bg-primary text-gray-100 flex justify-between md:hidden">
+      <!-- logo -->
+      <a href="#" class="block p-4 text-white font-bold order-2">ADMIN</a>
+
+      <!-- mobile menu button -->
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-medium order-1" id="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- sidebar -->
+    <div
+      class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"
+      id="navList">
+
+      <!-- logo -->
+      <a href="#" class="text-black flex items-center space-x-2 px-4 mb-10 text-center">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+        <span class="text-2xl font-extrabold">ADMIN</span>
+      </a>
+
+      <!-- nav -->
+      <nav class="">
+        <a href="#"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-r-4">
+          Dashboard
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Data <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Mahasiswa
+        </a>
+        <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Paslon
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Voting <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Data Terkini
+        </a>
+        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Hasil Pemilihan
+        </a>
+        <a href=""
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
+          Log Out
+        </a>
+      </nav>
+    </div>
+
+    <main>
+      <div class="flex-1 p-10 text-2xl font-bold">
+        <h1 class="text-2xl md:text-4xl uppercase underline mb-12">
+          Data Paslon
+        </h1>
+        <h2 class="text-lg md:text-3xl border-b-4 border-black">
+          Jumlah Pasangan Paslon
+        </h2>
+        <div class="data md:justify-around text-white mt-5">
+          <div class="data-items py-2 rounded-md lg:mr-3">
+            <div class="box">
+              <div class="item flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-20 max-h-20" viewBox="0 0 20 20" fill="#000">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd" />
+                </svg>
+                <div class="inner-items ml-1 md:ml-6">
+                  <h1 class="text-2xl text-black mb-3"><span class="text-6xl">1</span> Pasangan</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl mt-7 border-b-4 border-black">
+            Pasangan Calon
+          </h2>
+          <div>
+            <h2 class="text-2xl mt-4 ml-4 border-b-4 border-black">Paslon 1</h2>
+            <div>
+              <div class="profile flex flex-col md:flex-row items-center md:items-end justify-center my-7">
+                <div class="ketua-himpunan text-center">
+                  <h3 class="text-2xl">Taufiq Ahmadi</h3>
+                  <p class="text-lg">Calon Ketua Himpunan</p>
+                </div>
+                <div class="img my-3 md:mx-8">
+                  <img src="../../assets/images/paslon.png" class="w-50 h-40 object-cover object-center" alt="Paslon">
+                </div>
+                <div class="wakil-himpunan text-center">
+                  <h3 class="text-2xl">Dicky AL Fattah</h3>
+                  <p class="text-lg">Calon Wakil Ketua Himpunan</p>
+                </div>
+              </div>
+
+              <div class="wrapper mx-4 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="visi">
+                  <h2 class="underline uppercase text-2xl mb-3">Visi</h2>
+                  <p class="font-light text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque
+                    distinctio
+                    culpa! Quisquam
+                    reprehenderit nulla ipsa optio voluptatem quos ab, aliquam ea illo accusamus ratione fuga porro
+                    assumenda at sequi.</p>
+                </div>
+                <div class="misi">
+                  <h2 class="underline uppercase text-2xl mb-3">Misi</h2>
+                  <ul class="list-disc text-base ml-4 md:ml-0 font-light">
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button class="block ml-auto pt-5 text-lg font-bold cursor-pointer hover:text-primary" id="edit">Edit
+              Profile</button>
+
+            <div class="m-5 cursor-pointer">
+              <h2 class="text-2xl pb-2 border-b-2 border-black">Tambah Paslon</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <script type="module" src="../../script/admin.js"></script>
+</body>
+
+</html>

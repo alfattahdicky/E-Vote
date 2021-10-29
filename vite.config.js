@@ -8,12 +8,13 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        landing: resolve(__dirname, 'src/pages/landing.html'),
+        app: resolve(__dirname, 'src/script/app.js'),
         infopaslon: resolve(__dirname, 'src/pages/infopaslon.html'),
-        paslon: resolve(__dirname, 'src/pages/paslon.html'),
+        guide: resolve(__dirname, 'src/pages/guide.html'),
+        bantuan: resolve(__dirname, 'src/pages/bantuan.html'),
         adminhome: resolve(__dirname, 'src/pages/admin/home.html'),
-        admindata: resolve(__dirname, 'src/pages/admin/data.html'),
-        formpaslon: resolve(__dirname, 'src/pages/admin/form.html'),
+        dataPaslon: resolve(__dirname, 'src/pages/admin/dataPaslon.html'),
+        formPaslon: resolve(__dirname, 'src/pages/admin/form.html'),
       }
     }
   }
