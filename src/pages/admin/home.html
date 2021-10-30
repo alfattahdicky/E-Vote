@@ -85,7 +85,7 @@
     </div>
 
     <!-- content -->
-    <main>
+    <main class="w-full">
       <div class="flex-1 p-10 text-2xl font-bold">
         <h1 class="text-4xl underline mb-12">
           DASHBOARD
@@ -147,15 +147,35 @@
         </h2>
         <div class="vote lg:flex lg:justify-around items-center text-black">
           <div class="count lg:mr-4">
-              <div class="count-item flex items-center">
-                <img src="../../assets/images/bar_chart_square.png" alt="" class="mr-10">
+            <div class="count-item flex items-center">
+              <img src="../../assets/images/bar_chart_square.png" alt="" class="mr-5">
+              <div class="inner-item">
+                <h1 class="text-3xl xl:text-4xl">
+                  Quick Count
+                </h1>
+                <a href="quickCount.html" >
+                  <h2 class="flex items-center text-xl xl:text-2xl mt-2 xl:mt-4 hover:text-secondary">
+                    View more
+                    <span class="ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                  </h2>
+                </a>    
+              </div>
+            </div>
+          </div>
+          <div class="hasil sm:mt-10 lg:mt-0">
+            <div class="hasil-item flex items-center">
+              <img src="../../assets/images/user_circle.png" alt="" class="mr-5">
                 <div class="inner-item">
                   <h1 class="text-3xl xl:text-4xl">
-                    Quick Count
+                    Hasil Pemenang
                   </h1>
-                  <a href="quickCount.html" >
-                    <h2 class="flex items-center text-xl xl:text-2xl mt-2 xl:mt-4 hover:text-secondary">
-                      View more 
+                  <a href="quickCount.html" class="" >
+                    <h2 class="flex items-center text-xl xl:text-2xl mt-2 hover:text-secondary">
+                    View more
                       <span class="ml-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
@@ -166,28 +186,8 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
-        <div class="hasil sm:mt-10 lg:mt-0">
-              <div class="hasil-item flex items-center">
-                <img src="../../assets/images/user_circle.png" alt="" class="mr-10">
-                <div class="inner-item">
-                  <h1 class="text-3xl xl:text-4xl">
-                    Hasil Pemenang
-                  </h1>
-                  <a href="quickCount.html" class="" >
-                    <h2 class="flex items-center text-xl xl:text-2xl mt-2 hover:text-secondary">
-                      View more 
-                      <span class="ml-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
-                        </svg>
-                      </span>
-                    </h2>
-                  </a>    
-                </div>
-              </div>
-        </div>
-      </div>
     </main>
   </div>
   <script type="module" src="../../script/admin.js"></script>
