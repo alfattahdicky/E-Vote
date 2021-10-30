@@ -8,29 +8,29 @@
   <title>E-Vote</title>
 </head>
 
-<body>
-
-  <body class="text-yellow-700 antialiased font-body">
-    <div class="bg-fixed h-full w-full" style="background-image: url('./assets/images/bg.png')">
+<body class="font-body overflow-hidden">
+  <div class="text-yellow-700 antialiased">
+    <div class="bg-fixed h-full w-full">
+      <img src="./assets/images/bg.png" alt="Background" class="absolute object-cover object-center min-h-screen">
       <main>
-        <div class="bigtitle pt-72 text-center">
-          <h1 class="text-6xl font-bold underline">
+        <div class="bigtitle px-5 md:px-0 pt-72 text-center">
+          <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold underline">
             SELAMAT DATANG
           </h1>
-          <h2 class="text-2xl pt-4 font-popin">
+          <h2 class="text-xl sm:text-2xl pt-4 text-center">
             Gunakan hak suara anda, jadilah pemilih cerdas dan bijak!
           </h2>
         </div>
       </main>
       <div class="navigation text-center text-black mt-40 items-center">
-        <h3 class="text-2xl font-popin">
+        <h3 class="text-xl sm:text-2xl">
           Ikuti Tour Kami
         </h3>
         <div>
           <div class="py-3">
-            <a href="./pages/infopaslon.html" class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+            <a href="./pages/login.html" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce mx-auto h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
               </svg>
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
   <script type="module" src="/main.js"></script>
 </body>
 

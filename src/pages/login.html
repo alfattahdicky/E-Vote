@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Login</title>
+</head>
+
+<body class="font-body overflow-hidden">
+  <div class="max-w-full h-full">
+    <div>
+      <div class="absolute top-0 w-full h-full bg-linearTwo"></div>
+      <div class="absolute -bottom-1/2 left-0 w-full h-full bg-linearThree"></div>
+    </div>
+    <div class="grid place-items-center min-h-screen relative z-20">
+      <div class="shadow-xl rounded-3xl bg-linearOne mx-5 md:mx-0">
+        <form class="px-8 md:px-20 py-8 sm:py-10 max-w-full md:max-w-md">
+          <h2 class="text-2xl sm:text-3xl mb-5 text-black font-display font-semibold text-center uppercase">
+            Login
+          </h2>
+          <div class="input mt-12 max-w-full">
+            <div>
+              <div class="text-sm font-bold text-gray-700 tracking-wide">Nomor Induk Mahasiswa</div>
+              <input class="bg-transparent border-2 border-black rounded-full w-full mt-2 py-1 px-3 text-grey-darker"
+                id="username" type="text" placeholder="">
+            </div>
+            <div class="mt-3">
+              <div class="text-sm font-bold text-gray-700 tracking-wide">Password</div>
+              <input class="bg-transparent border-2 border-black rounded-full w-full mt-2 py-1 px-3 text-grey-darker"
+                id="password" type="password" placeholder="">
+            </div>
+          </div>
+          <div class="pt-6 text-right">
+            <a class="text-xs font-display underline font-semibold cursor-pointer">
+              Forgot Password?
+            </a>
+          </div>
+          <div class="mt-10">
+            <a href="../pages/infopaslon.html"
+              class="block text-center bg-blue-300 text-black p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-blue-200 shadow-lg">
+              Log In
+            </a>
+          </div>
+          <div class="mt-12 text-xs sm:text-sm font-display font-semibold text-gray-700 text-left">
+            Don't have an account ? <a class="cursor-pointer">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
