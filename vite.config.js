@@ -7,9 +7,11 @@ module.exports = defineConfig({
     outDir: '../dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
         app: resolve(__dirname, 'src/script/app.js'),
+        main: resolve(__dirname, 'src/index.html'),
         infopaslon: resolve(__dirname, 'src/pages/infopaslon.html'),
+        paslon: resolve(__dirname, 'src/pages/paslon.html'),
+        home: resolve(__dirname, 'src/pages/home.html'),
         guide: resolve(__dirname, 'src/pages/guide.html'),
         login: resolve(__dirname, 'src/pages/login.html'),
         bantuan: resolve(__dirname, 'src/pages/bantuan.html'),
