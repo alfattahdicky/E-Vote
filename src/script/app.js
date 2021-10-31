@@ -17,6 +17,7 @@ function showDetailProfile() {
 }
 function showNavbar() {
   if (navList.classList.contains('opacity-0')) {
+    toggle.firstElementChild.src = '../assets/icons/x.png';
     navList.classList.replace('translate-x-full', 'translate-x-0');
     navList.classList.replace('opacity-0', 'opacity-100');
   } else {
@@ -31,6 +32,7 @@ function hiddenDetailProfile() {
 function hiddenNavbar() {
   navList.classList.replace('translate-x-0', 'translate-x-full');
   navList.classList.replace('opacity-100', 'opacity-0');
+  toggle.firstElementChild.src = '../assets/icons/hamburger.png';
 }
 
 profile.addEventListener('click', showDetailProfile);

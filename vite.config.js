@@ -17,6 +17,7 @@ module.exports = defineConfig({
         bantuan: resolve(__dirname, 'src/pages/bantuan.html'),
         adminhome: resolve(__dirname, 'src/pages/admin/home.html'),
         dataPaslon: resolve(__dirname, 'src/pages/admin/dataPaslon.html'),
+        dataMahasiswa: resolve(__dirname, 'src/pages/admin/dataMahasiswa.html'),
         formPaslon: resolve(__dirname, 'src/pages/admin/form.html'),
       }
     }
