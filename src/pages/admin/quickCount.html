@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <title>Quick Count</title>
+</head>
+
+<body class="font-body">
+  <div class="relative min-h-screen md:flex">
+    <!-- mobile menu bar -->
+    <div class="bg-primary text-gray-100 flex justify-between md:hidden">
+      <!-- logo -->
+      <a href="#" class="block p-4 text-white font-bold order-2">ADMIN</a>
+
+      <!-- mobile menu button -->
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-medium order-1" id="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- sidebar -->
+    <div
+      class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out"
+      id="navList">
+
+      <!-- logo -->
+      <a href="#" class="text-black flex items-center space-x-2 px-1 mb-10 text-center">
+        <img src="../../assets/images/auction 1.png" alt="" class="object-cover w-10 h-10">
+        <span class="text-xl lg:text-2xl font-extrabold">ADMIN</span>
+      </a>
+
+      <!-- nav -->
+      <nav class="">
+        <a href="home.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-r-4">
+          Dashboard
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Data <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="dataMahasiswa.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Mahasiswa
+        </a>
+        <a href="dataPaslon.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white">
+          Daftar Paslon
+        </a>
+        <a href=""
+          class="py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold border-b-2 flex justify-between">
+          Voting <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </a>
+        <a href="quickCount.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Data Terkini
+        </a>
+        <a href="quickCount.html"
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white ">
+          Hasil Pemilihan
+        </a>
+        <a href=""
+          class="block py-2.5 px-4 rounded transition duration-200 hover:bg-medium hover:text-white font-bold absolute left-0 right-0 bottom-0 ">
+          Log Out
+        </a>
+      </nav>
+    </div>
+
+    <main class="px-8 pt-10">
+      <h1 class="text-3xl uppercase underline font-bold">quick count</h1>
+      <div class="xl:container flex flex-col lg:flex-row  lg:items-start">
+        <div>
+          <h1 class="text-xl md:text-2xl mt-10 mb-8 underline font-bold">Data Terkini Pemilihan</h1>
+          <div class="chart ">
+            <canvas id="myChart" width="500" height="400"></canvas>
+          </div>
+
+          <div class="presentase ml-5 mt-4">
+            <div class="flex gap-8">
+              <div class="flex items-center gap-3" id="paslonSatu">
+                <span class="inline-block w-5 h-5 rounded-full"></span>
+                <p></p>
+              </div>
+              <div class="flex items-center gap-3" id="paslonDua">
+                <span class="inline-block w-5 h-5 rounded-full "></span>
+                <p></p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 mt-4" id="paslonTiga">
+              <span class="inline-block w-5 h-5 rounded-full "></span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper mt-10 lg:mt-20 lg:ml-20 w-64 space-y-5 ">
+          <div class="flex">
+            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon"
+              class="object-cover object-center w-4/5 h-4/5">
+            <div class="ml-5">
+              <h5 class="text-xl font-bold text-red-600">Paslon 1</h5>
+              <p class="text-base">Taufiq Ahmadi - Dicky Al Fattah</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon" class="object-cover w-4/5 h-4/5">
+            <div class="ml-5">
+              <h5 class="text-xl font-bold text-red-600">Paslon 2</h5>
+              <p class="text-base">Taufiq Ahmadi - Dicky Al-Fattah</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon" class="object-cover w-4/5 h-4/5">
+            <div class="ml-5">
+              <h5 class="text-xl font-bold text-red-600">Paslon 3</h5>
+              <p class="text-base">Taufiq Ahmadi - Dicky Al-Fattah</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
+    integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../../script/chart.js"></script>
+  <script type="module" src="../../script/admin.js"></script>
+</body>
+
+</html>

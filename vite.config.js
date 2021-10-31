@@ -19,6 +19,7 @@ module.exports = defineConfig({
         dataPaslon: resolve(__dirname, 'src/pages/admin/dataPaslon.html'),
         dataMahasiswa: resolve(__dirname, 'src/pages/admin/dataMahasiswa.html'),
         formPaslon: resolve(__dirname, 'src/pages/admin/form.html'),
+        quickCount: resolve(__dirname, 'src/pages/admin/quickCount.html'),
       }
     }
   }
