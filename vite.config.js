@@ -14,6 +14,7 @@ module.exports = defineConfig({
         home: resolve(__dirname, 'src/pages/home.html'),
         guide: resolve(__dirname, 'src/pages/guide.html'),
         login: resolve(__dirname, 'src/pages/login.html'),
+        signup: resolve(__dirname, 'src/pages/signup.html'),
         bantuan: resolve(__dirname, 'src/pages/bantuan.html'),
         adminhome: resolve(__dirname, 'src/pages/admin/home.html'),
         dataPaslon: resolve(__dirname, 'src/pages/admin/dataPaslon.html'),

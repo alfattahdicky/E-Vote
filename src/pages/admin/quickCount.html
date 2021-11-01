@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" type="image/png" href="../../assets/icons/at.png" />
   <title>Quick Count</title>
 </head>
 
 <body class="font-body">
-  <div class="relative min-h-screen md:flex">
+  <div class="min-h-screen md:flex">
     <!-- mobile menu bar -->
     <div class="bg-primary text-gray-100 flex justify-between md:hidden">
       <!-- logo -->
@@ -84,12 +84,12 @@
       </nav>
     </div>
 
-    <main class="px-8 pt-10">
+    <main class="px-8 pt-10 md:flex-1">
       <h1 class="text-3xl uppercase underline font-bold">quick count</h1>
-      <div class="xl:container flex flex-col lg:flex-row  lg:items-start">
+      <div class="xl:container flex flex-col lg:flex-row lg:items-start">
         <div>
           <h1 class="text-xl md:text-2xl mt-10 mb-8 underline font-bold">Data Terkini Pemilihan</h1>
-          <div class="chart ">
+          <div class="chart max-w-full">
             <canvas id="myChart" width="500" height="400"></canvas>
           </div>
 
@@ -111,27 +111,29 @@
           </div>
         </div>
 
-        <div class="wrapper mt-10 lg:mt-20 lg:ml-20 w-64 space-y-5 ">
-          <div class="flex">
+        <div class="wrapper mt-10 lg:mt-20 lg:ml-20 space-y-5 flex-auto">
+          <div class="flex items-center">
             <img src="../../assets/icons/user-circle_black.svg" alt="Paslon"
-              class="object-cover object-center w-4/5 h-4/5">
+              class="object-cover object-center w-16 h-16 sm:w-28 sm:h-28">
             <div class="ml-5">
               <h5 class="text-xl font-bold text-red-600">Paslon 1</h5>
               <p class="text-base">Taufiq Ahmadi - Dicky Al Fattah</p>
             </div>
           </div>
           <div class="flex items-center">
-            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon" class="object-cover w-4/5 h-4/5">
+            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon"
+              class="object-cover object-center w-16 h-16 sm:w-28 sm:h-28">
             <div class="ml-5">
               <h5 class="text-xl font-bold text-red-600">Paslon 2</h5>
-              <p class="text-base">Taufiq Ahmadi - Dicky Al-Fattah</p>
+              <p class="text-base">Taufiq Ahmadi - Dicky Al Fattah</p>
             </div>
           </div>
           <div class="flex items-center">
-            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon" class="object-cover w-4/5 h-4/5">
+            <img src="../../assets/icons/user-circle_black.svg" alt="Paslon"
+              class="object-cover object-center w-16 h-16 sm:w-28 sm:h-28">
             <div class="ml-5">
               <h5 class="text-xl font-bold text-red-600">Paslon 3</h5>
-              <p class="text-base">Taufiq Ahmadi - Dicky Al-Fattah</p>
+              <p class="text-base">Taufiq Ahmadi - Dicky Al Fattah</p>
             </div>
           </div>
         </div>
@@ -144,7 +146,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
     integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../../script/chart.js"></script>
+  <script type="module" src="../../script/chart.js"></script>
   <script type="module" src="../../script/admin.js"></script>
 </body>
 

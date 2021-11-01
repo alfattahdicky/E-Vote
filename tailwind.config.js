@@ -15,7 +15,7 @@ module.exports = {
         body: "Montserrat, sans-serif"
       },
       backgroundImage: {
-        linearOne: 'linear-gradient(212.87deg, rgba(255, 255, 255, 0.8) 7.83%, rgba(255, 255, 255, 0.1) 100.54%)',
+        linearOne: 'linear-gradient(-225deg,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) )',
         linearTwo: 'linear-gradient(180deg, #9FC0DF 0%, rgba(159, 192, 223, 0) 100%)',
         linearThree: 'linear-gradient(180deg, rgba(159, 192, 223, 0) 0%, #9FC0DF 100%)',
       },

@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../assets/icons/T.png" />
+</head>
+
+<body class="font-body overflow-hidden">
+  <div class="mx-auto max-w-full h-full">
+    <div>
+      <div class="absolute top-0 w-full h-full bg-linearTwo"></div>
+      <div class="absolute -bottom-1/2 left-0 w-full h-full bg-linearThree"></div>
+    </div>
+    <div class="wrapper-form relative z-20 grid place-items-center min-h-screen">
+      <form action=""
+        class="shadow-md bg-linearOne py-10 lg:py-16 px-6 sm:px-12 xl:px-20 rounded-3xl space-y-6 lg:space-y-8 ">
+        <h2 class="font-bold text-lg sm:text-xl md:text-2xl uppercase text-center">Create New Account</h2>
+        <div class="wrapper md:flex items-center justify-center gap-16 lg:gap-24">
+          <div class="input-text grid md:block gap-4 md:mb-6">
+            <label for="nama"> Nama Lengkap
+              <input type="text"
+                class="outline-none bg-transparent border-2 border-black rounded-full block mt-2 pl-3 text-base pr-0 lg:pr-16"
+                id="nama">
+            </label>
+            <label for="email" class="md:block md:my-6"> Email
+              <input type="text"
+                class="outline-none block bg-transparent border-2 border-black rounded-full mt-2 pl-3 text-base lg:pr-16"
+                id="email">
+            </label>
+            <label for="nim"> Nomor Induk Mahasiswa
+              <input type="text"
+                class="outline-none block bg-transparent border-2 border-black rounded-full mt-2 pl-3 text-base lg:pr-16"
+                id="nim">
+            </label>
+          </div>
+          <div class="input-password grid md:block gap-4 mt-5 md:mt-0 flex-auto">
+            <label for="password"> Password
+              <input type="password"
+                class="outline-none block bg-transparent border-2 border-black rounded-full mt-2 pl-3 lg:pr-16"
+                id="password">
+            </label>
+            <label for="confirm" class="md:block md:my-6"> Password Confirmation
+              <input type="password"
+                class="outline-none block bg-transparent border-2 border-black rounded-full mt-2 pl-3 text-base lg:pr-16"
+                id="confirm">
+            </label>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <a href="./infopaslon.html" class="btn inline-block font-bold uppercase bg-secondary px-16 py-3 rounded-full border-2 transition-all
+          hover:border-black hover:bg-transparent">Create</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

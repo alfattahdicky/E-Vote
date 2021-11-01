@@ -8,6 +8,17 @@ const navList = document.getElementById('navList');
 const askEl = document.querySelectorAll('.ask');
 
 
+function showContent() {
+  const loader = document.getElementById('loader');
+  console.log(loader);
+  window.addEventListener('load', function () {
+    loader.classList.add('hidden');
+    loader.parentElement.classList.remove('z-50');
+  });
+}
+
+showContent();
+
 function showDetailProfile() {
   if (detailProfileElement.classList.contains('lg:opacity-0')) {
     detailProfileElement.classList.replace('lg:opacity-0', 'lg:opacity-100');

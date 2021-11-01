@@ -10,8 +10,14 @@
 </head>
 
 <body class="font-body">
+  <div
+    class="grid place-items-center min-h-screen absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full">
+    <div class="loader w-20 h-20 p-20 border-t-4 border-b-4 border-primary animate-spin rounded-full" id="loader">
+    </div>
+  </div>
+
   <nav
-    class=" lg:flex h-16 lg:h-20 lg:justify-between bg-secondary py-4 lg:items-center fixed top-0 left-0 right-0 z-50">
+    class=" lg:flex h-16 lg:h-20 lg:justify-between bg-secondary py-4 lg:items-center fixed top-0 left-0 right-0 z-40">
     <div class="wrapper grid lg:block grid-cols-3 px-4 justify-items-center items-center">
       <div
         class="logo text-primarydark justify-self-center col-start-2 col-end-3 lg:col-start-1 lg:col-end-2 font-bold text-lg ml-5">
@@ -20,7 +26,7 @@
         </a>
       </div>
       <div class="justify-self-end lg:hidden" id="hamburger">
-        <img src="../assets/icons/hamburger.png" alt="Hamburger">
+        <img src="../assets/icons/hamburger.png" alt="Hamburger" loading="lazy">
       </div>
     </div>
     <div
@@ -101,7 +107,8 @@
           class="profile lg:flex hidden py-1 px-2 rounded-md items-center cursor-pointer hover:bg-primary transition duration-100 ease-in-out"
           id="profile">
           <div class="relative">
-            <img src="../assets/images/profile.png" class="w-10 h-10 rounded-full object-cover mr-2" alt="Profile">
+            <img src="../assets/images/profile.png" class="w-10 h-10 rounded-full object-cover mr-2" alt="Profile"
+              loading="lazy">
             <span class="indicator w-2 h-2 bg-indicator absolute bottom-1 right-2 rounded-full"></span>
           </div>
           <p>Dicky</p>
@@ -113,7 +120,7 @@
             <div class="relative">
               <img src="../assets/images/profile.png"
                 class="lg:w-24 lg:h-24 w-10 h-10 rounded-full relative object-center object-cover mx-auto"
-                alt="Profile">
+                loading="lazy" alt="Profile">
               <span
                 class="indicator lg:w-5 lg:h-5 w-2 h-2 absolute lg:right-8 lg:top-16 bottom-2 right-1 bg-indicator rounded-full"></span>
             </div>
@@ -138,7 +145,8 @@
       <div class="paslon pt-10">
         <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
           <figure class="md:pr-20 md:flex-3">
-            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
+            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon"
+              loading="lazy">
             <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
           </figure>
 
@@ -166,7 +174,8 @@
         </div>
         <div class="paslon-satu pt-4 flex items-center md:items-stretch flex-col md:flex-row ">
           <figure class="md:pr-20 md:flex-3">
-            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon">
+            <img src="../assets/images/paslon.png" class="w-80 h-52 object-cover object-center" alt="Paslon"
+              loading="lazy">
             <figcaption class="text-center mb-4 lg:mb-0 mt-4">Paslon 1</figcaption>
           </figure>
 
